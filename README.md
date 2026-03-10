@@ -71,4 +71,4 @@ Os resultados, incluindo gráficos e relatórios, serão gerados dinamicamente n
 ---
 
 **Desenvolvido por:** Mayara Martins.<br>
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SilasTeodoro)[![LinkedInd](https://img.shields.io/badge/LinkedIn-100000?style=for-the-badge&logo=github&logoColor=white)]((https://www.linkedin.com/in/mayara-martins-rp/))
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MayaraMartins95)[![LinkedInd](https://img.shields.io/badge/LinkedIn-100000?style=for-the-badge&logo=github&logoColor=white)](https://www.linkedin.com/in/mayara-martins-rp/)
