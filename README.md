@@ -1,45 +1,62 @@
+
 # Análise Comparativa de Lojas de Varejo
+
+---
 
 ## Descrição do Projeto
 
-Este projeto é uma parceria com a Alura e Oracle no programa ONE, realiza uma análise comparativa do desempenho de quatro lojas de varejo, com o objetivo de identificar qual loja seria a melhor candidata para ser vendida, a fim de realocar capital para novos investimentos. A análise abrange faturamento, vendas por categoria de produto, média de avaliação de clientes, frete médio e desempenho geográfico.
+O objetivo é realizar uma análise comparativa do desempenho de quatro lojas de varejo, a fim de identificar qual unidade apresenta menor desempenho e poderia ser considerada para venda, permitindo a realocação estratégica de capital para novos investimentos.
+Para isso, foram analisados indicadores como faturamento total, vendas por categoria de produto, média de avaliação dos clientes, custo médio de frete e desempenho geográfico das lojas.
+
+---
 
 ## Dados
 
-Os dados para esta análise foram obtidos de quatro arquivos CSV, cada um representando as vendas de uma loja específica:
+Os dados utilizados nesta análise foram extraídos de quatro arquivos no formato CSV, sendo que cada arquivo representa o histórico de vendas de uma loja específica.
 
 *   **Loja 1:** [loja_1.csv](https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science/refs/heads/main/base-de-dados-challenge-1/loja_1.csv)
 *   **Loja 2:** [loja_2.csv](https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science/refs/heads/main/base-de-dados-challenge-1/loja_2.csv)
 *   **Loja 3:** [loja_3.csv](https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science/refs/heads/main/base-de-dados-challenge-1/loja_3.csv)
 *   **Loja 4:** [loja_4.csv](https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science/refs/heads/main/base-de-dados-challenge-1/loja_4.csv)
 
-Cada arquivo contém informações detalhadas sobre produtos, categorias, preços, frete, datas de compra, vendedores, locais de compra, avaliações, tipos de pagamento, quantidade de parcelas, latitude e longitude.
+Cada arquivo reúne informações detalhadas sobre as transações, incluindo produtos, categorias, preços, custos de frete, datas de compra, vendedores, localização das vendas, avaliações dos clientes, métodos de pagamento, número de parcelas, além de dados geográficos (latitude e longitude) que permitem análises espaciais.
 
-## Análises Realizadas
+---
 
-As seguintes análises foram conduzidas:
+## Análises
 
-1.  **Faturamento Total:** Cálculo do faturamento total para cada loja.
-2.  **Vendas por Categoria:** Identificação das categorias de produtos mais e menos vendidas em cada loja, com visualizações em barras.
-3.  **Média de Avaliação:** Determinação da média de avaliação dos clientes para cada loja.
-4.  **Produtos Mais e Menos Vendidos:** Listagem dos produtos com maior e menor volume de vendas.
-5.  **Frete Médio:** Cálculo do custo médio de frete para cada loja.
-6.  **Visualização Consolidada:** Geração de um DataFrame consolidado com as principais métricas de cada loja.
-7.  **Gráficos Comparativos:**
-    *   Faturamento total por loja (Gráfico de Barras).
-    *   Média de avaliação por loja (Gráfico de Barras Horizontais).
-    *   Heatmap das Top 5 categorias mais vendidas por loja.
-8.  **Visualização Geográfica:** Mapeamento do desempenho das lojas utilizando as coordenadas de latitude e longitude, com bolhas representando o faturamento total e cores representando cada loja.
+As seguintes análises exploratórias foram conduzidas para avaliar o desempenho das lojas e identificar possíveis oportunidades de otimização:
+* **1. Faturamento Total:**
+Cálculo do faturamento total gerado por cada loja, permitindo comparar diretamente o desempenho financeiro entre as unidades.
+* **2. Vendas por Categoria:**
+Identificação das categorias de produtos mais e menos vendidas em cada loja, acompanhada de visualizações em gráficos de barras para facilitar a comparação.
+* **3. Média de Avaliação dos Clientes:**
+Cálculo da média das avaliações atribuídas pelos clientes a cada loja, fornecendo um indicador da percepção de qualidade do serviço.
+* **4. Produtos Mais e Menos Vendidos:**
+Identificação dos produtos com maior e menor volume de vendas, permitindo compreender padrões de demanda dentro do portfólio.
+* **5. Frete Médio:**
+Cálculo do custo médio de frete por loja, auxiliando na análise de possíveis diferenças logísticas entre as unidades.
+* **6. Consolidação das Métricas:**
+Construção de um DataFrame consolidado reunindo as principais métricas analisadas para cada loja, facilitando comparações e interpretação dos resultados.
+* **7. Gráficos Comparativos:**
+Desenvolvimento de visualizações para destacar diferenças de desempenho entre as lojas:
+  * Faturamento total por loja (gráfico de barras)
+  * Média de avaliação por loja (gráfico de barras horizontais)
+  * Heatmap com as cinco categorias mais vendidas por loja
+* **8. Visualização Geográfica:**
+Representação espacial do desempenho das lojas utilizando coordenadas de latitude e longitude, onde o tamanho das bolhas indica o faturamento total e as cores distinguem cada loja.
 
-## Conclusões Principais
+---
 
-Com base em todas as análises realizadas, a **Loja 4** é a candidata mais indicada para ser vendida. Os principais motivos são:
+## Conclusões
 
-*   **Menor Faturamento Total:** A Loja 4 apresentou o menor faturamento entre as quatro lojas, tornando-a a opção com menor impacto na receita geral ao ser desinvestida.
-*   **Média de Avaliação Mediana:** Embora não seja a mais baixa, sua média de avaliação está em uma posição intermediária.
-*   **Sobreposição Geográfica:** A Loja 4 possui uma localização geográfica muito próxima da Loja 1. Ao vender a Loja 4, há um potencial de que parte de seu faturamento seja absorvida pela Loja 1, minimizando perdas e concentrando esforços em uma loja mais rentável na mesma região.
+Com base nas análises exploratórias realizadas com a biblioteca Pandas, a Loja 4 se apresenta como a candidata mais indicada para venda. Os principais fatores que sustentam essa decisão são:
+* **Menor faturamento total**: Entre as quatro lojas analisadas, a Loja 4 apresentou o menor volume de faturamento, o que indica que sua venda teria menor impacto na receita global do negócio.
+* **Avaliação média intermediária**: A média de avaliações da Loja 4 não é a mais baixa, porém também não se destaca positivamente quando comparada às demais lojas.
+* **Proximidade geográfica com outra unidade**: A Loja 4 está localizada muito próxima da Loja 1, o que sugere a possibilidade de absorção parcial da demanda por essa unidade caso a Loja 4 seja descontinuada, reduzindo potenciais perdas de receita.
+Dessa forma, a decisão de venda da Loja 4 busca otimizar a alocação de recursos e liberar capital, minimizando impactos operacionais e concentrando esforços nas unidades com melhor desempenho.
 
-Esta decisão visa liberar capital com o menor impacto possível na operação e com a perspectiva de otimização de recursos.
+---
 
 ## Como Executar a Análise
 
@@ -50,3 +67,8 @@ Para replicar e explorar esta análise:
 3.  **Execute as Células:** Execute todas as células do notebook sequencialmente. Certifique-se de que todas as bibliotecas necessárias (pandas, matplotlib, seaborn, folium) estão instaladas. O Google Colab geralmente já as possui pré-instaladas.
 
 Os resultados, incluindo gráficos e relatórios, serão gerados dinamicamente no notebook.
+
+---
+
+**Desenvolvido por:** Mayara Martins.<br>
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SilasTeodoro)[![LinkedInd](https://img.shields.io/badge/LinkedIn-100000?style=for-the-badge&logo=github&logoColor=white)]((https://www.linkedin.com/in/mayara-martins-rp/))
